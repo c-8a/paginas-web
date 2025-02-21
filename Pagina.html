@@ -22,15 +22,29 @@
 
     <link rel="stylesheet" href="Hoja_Estilo.css" >
 
+<!--esta etiqueta Style local podria quitarse ya que arriba se hace referencia al archivo externo de CSS que tiene los mismos estilos definidos-->
+
     <style type="text/css">
+        body {
+            background-color: rgba(139, 16, 16, 0.5); /* Gris claro con 50% de opacidad */
+        }
         h1 {
             text-align: center;
             font-family: "Lucida Grande";
-            font-size: 32px
+            font-size: 4em
         }
         p{color: aqua}
         .miEstilo {color: green}
         #miEstilo2 {color: rgb(203, 29, 174)}
+        #p1 {background-color: rgba(255, 0, 0, 0.3);} /*Rojo con transparencia*/
+        #p2 {background-color: rgba(0, 255, 0, 0.3)} /*Verde con transparencia*/ 
+        #p3 {background-color: rgba(0, 0, 255, 0.3);} /*Azul con transparencia*/
+        .lineal {
+            width: 300px;
+            height: 200px;
+            background-image: linear-gradient(to right, red, yellow);
+            }
+        a:visited{color:red}
     </style>
         
 
@@ -45,6 +59,20 @@
                                     <!--Parrafo-->
 
     <p><b id="miEstilo2">Esto es un párrafo</b>  de texto. Para crear automáticamente un texto de prueba,
+escribimos LoremXX, <i>donde XX será el número</i> de palabras que queremos crear. Y a
+continuación le damos a la tecla <del>TAB</del>.
+</p>
+
+                                    <!--Parrafo-->
+
+    <div class = "lineal"><b id="miEstilo2">Esto es un párrafo2</b>  de texto. Para crear una mema automáticamente un texto de prueba,
+escribimos LoremXX, <i>donde XX será el número</i> de palabras que queremos crear. Y a
+continuación le damos a la tecla <del>TAB</del>.
+    </div>
+
+                                    <!--Parrafo-->
+
+    <p><b id="miEstilo2">Esto es un párrafo3</b>  de texto. Para crear automáticamente un texto de prueba,
 escribimos LoremXX, <i>donde XX será el número</i> de palabras que queremos crear. Y a
 continuación le damos a la tecla <del>TAB</del>.
 </p>

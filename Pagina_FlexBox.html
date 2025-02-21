@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="ES-es">                 <!--Inicio de la página-->
+
+<head>                              <!--Inicio del HEAD-->
+
+    <meta charset="utf-8"/>
+
+                                    <!--Descripcion de la pagina-->
+    
+    <meta name="Description" content="Descripcion de la pagina"/>
+    
+                                    <!--Palabras clave-->
+
+    <meta name="Keywords" content="Palabras clave, separadas por comas" />
+
+                                    <!--Titulo de la pagina-->
+
+    <title>Pagina Web de los Memitos</title>
+
+<!--esta etiqueta Style local podria quitarse ya que arriba se hace referencia al archivo externo de CSS que tiene los mismos estilos definidos-->
+
+    <style type="text/css">
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+            /*flex-flow: row wrap; /*esto es para "ahorrar" dos sentencias de estilo*/
+            background: steelblue;
+            width: 600px;
+            height: 200px;
+            align-content: flex-start;
+            align-items: stretch;
+            gap: 4px 8px;
+        }
+
+        .item {
+            background: grey;
+            width: 50%;
+            height: 50px;
+            
+            flex: 1 3 35%; /* flex: <flex-grow> <flexshrink> <flex-basis> */
+        }
+
+        .item2{
+            align-self: center;
+            background: grey;
+            width: 50%;
+            height: 50px;
+        }
+    </style>
+        
+
+</head>                             <!--Fin del HEAD-->
+
+<body>                              <!--Comienzo del BODY-->
+
+    <h1 id="titulo">La Lechita rica</h1>
+    
+    <hr>
+
+    <div class="container"> <!-- Flex container -->
+        <div class="item item-1">1</div> <!--Flex items -->
+        <div class="item item-2">2</div>
+        <div class="item2 item-3">3</div>
+    </div>
+
+                                    <!--Parrafo-->
+
+    <p><b id="miEstilo2">Esto es un párrafo</b>  de texto. Para crear automáticamente un texto de prueba,
+escribimos LoremXX, <i>donde XX será el número</i> de palabras que queremos crear. Y a
+continuación le damos a la tecla <del>TAB</del>.
+</p>
+
+                                    <!--Parrafo-->
+
+    <div class = "lineal"><b id="miEstilo2">Esto es un párrafo2</b>  de texto. Para crear una mema automáticamente un texto de prueba,
+escribimos LoremXX, <i>donde XX será el número</i> de palabras que queremos crear. Y a
+continuación le damos a la tecla <del>TAB</del>.
+    </div>
+
+                                    <!--Parrafo-->
+
+    <p><b id="miEstilo2">Esto es un párrafo3</b>  de texto. Para crear automáticamente un texto de prueba,
+escribimos LoremXX, <i>donde XX será el número</i> de palabras que queremos crear. Y a
+continuación le damos a la tecla <del>TAB</del>.
+</p>
+
+<br>                                <!--Salto de linea-->
+
+<pre class= "miEstilo ">
+            Etiqueta de texto preformateado. El navegador interpreta el texto escrito tal y como
+            está, respetando los saltos de línea, espacios, etc. indicados.
+            
+            Por ejemplo, ahora vamos a poner dos saltos de línea
+            ...y luego seguiremos escribiendo.</pre>
+
+                    
+
+</body>                             <!--Fin del BODY-->
+
+</html>                             <!--Fin de la pagina WEB-->

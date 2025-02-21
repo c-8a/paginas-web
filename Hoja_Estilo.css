@@ -1,3 +1,15 @@
+body {
+    background-color: rgba(177, 63, 63, 0.5); /* Gris claro con 50% de opacidad */
+}
 p{color: rgb(53, 196, 62)}
 .miEstilo {color: green}
 #miEstilo2 {color: rgb(203, 29, 174)}
+#p1 {background-color: rgba(255, 0, 0, 0.3);} /*Rojo con transparencia*/
+#p2 {background-color: rgba(0, 255, 0, 0.3)} /*Verde con transparencia*/ 
+#p3 {background-color: rgba(0, 0, 255, 0.3);} /*Azul con transparencia*/
+.lineal {
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(to right, red, yellow);
+    }
+a:visited{color:red}
