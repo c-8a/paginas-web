@@ -27,25 +27,25 @@
             flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
             /*flex-flow: row wrap; /*esto es para "ahorrar" dos sentencias de estilo*/
             background: steelblue;
-            width: 600px;
+            width: 800px;
             height: 200px;
-            align-content: flex-start;
-            align-items: stretch;
+            /*align-content: flex-start;*/
             gap: 4px 8px;
         }
 
         .item {
+            align-self: flex-start;
             background: grey;
-            width: 50%;
+            width: 20%;
             height: 50px;
             
-            flex: 1 3 35%; /* flex: <flex-grow> <flexshrink> <flex-basis> */
+            /*flex: 1 3 35%; /* flex: <flex-grow> <flexshrink> <flex-basis> */
         }
 
         .item2{
-            align-self: center;
+            align-self: flex-end;
             background: grey;
-            width: 50%;
+            width: 20%;
             height: 50px;
         }
     </style>
