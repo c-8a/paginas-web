@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de HTML y JavaScript</title>
+    <script>
+        var articulos = ["balon", "botas", "camiseta", "pantalon"];
+    </script>
+</head>
+<body>
+
+    <h1>¡Hola Mundo!</h1>
+
+    <button id="miBoton" onclick="alert('Botón pulsado')">Haz clic aquí</button>
+    
+    <h1>Tu nombre es</h1>
+
+    <script>
+        /*var precio=30000;
+        var dinero=prompt("Introduce cuanto dinero tienes: ");
+        var edad = prompt("Introduce tu edad:");
+
+        var imprime = "";
+        switch (edad) {
+            case "18":
+                imprime = "Acabas de cumplir la mayoría de edad";
+            break;
+
+            case "25":
+                imprime = "Eres un adulto";
+            break;
+
+            case "50":
+                imprime = "Eres maduro";
+            break;
+
+            default:
+                imprime = "Otra edad no contemplada"
+            break;
+
+            }
+            alert(imprime);
+
+
+        if ((precio <=dinero) && (edad >= 18)) {
+            alert("Te puedes comprar el coche");
+        } else if ((precio <= dinero) && (edad< 18)) {
+            alert("Tienes el dinero pero no la edad");
+        }
+        else if ((precio > dinero) && (edad>= 18)) {
+            alert("Tienes la edad pero no el dinero");
+        }
+        else if ((precio > dinero) && (edad < 18)) {
+            alert("Ni dinero ni edad");
+        }
+
+        for(var i=0;i<10;i++){
+            document.write("Hola"+i+"<br>");
+        }
+            document.write("Ejecución terminada.");
+
+            var contador = 20;
+            var meses = ["Enero", "Febrero",
+            "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre",
+            "Octubre", "Novienbre", "Diciembre"];
+            
+            //while (contador < meses.length) {
+            //    document.write(meses[contador] + "<br>");
+            //    contador++;
+            //}
+
+            do {
+                document.write(meses[3] + "<br>");
+                contador++;
+            } while (contador < meses.length);*/
+
+            document.write("<p>El primer articulo es <strong> "+
+                articulos[0]+"</strong></p > ");
+            document.write("<P>La longitud del array es " + 
+                articulos.length + "</p>");
+            document.write("<p>El último articulo es <strong>" 
+                + articulos[articulos.length- 1] + "</strong></p>");
+            articulos.unshift("pelota");
+            articulos.push("canasta");
+            document.write("<p>Añadimos el artículo <strong>" + 
+                articulos[0] + "</strong></p>");
+            document.write("<p>El primer articulo ahora es <strong>" + 
+                articulos[0] + "</strong></p>");
+            document.write("<p>El último articulo ahora es <strong>" + 
+                articulos[articulos.length - 1] + "</strong></p>");
+            document.write("<P>La longitud del array ahora es " + 
+                articulos.length + "</p>");
+            document.write(articulos);
+            
+            articulos.push(prompt("introduce nuevo articulo"));
+            document.write("<br>");
+            document.write(articulos);
+            
+            articulos.sort();
+            document.write("<p>"+articulos+"</p>");
+            articulos.reverse();
+            document.write("<br>");
+            document.write(articulos);
+
+            document.write("<ul>");
+            var nombres = ["Angel", "Sara", "Manolo", "Ana"];
+            for (var i = 0; i < nombres.length; i++) {
+                document.write("<li>" + nombres[i] + "</li>");
+            }
+            document.write("</ul>");
+
+            var trabajadores = new Array();
+            var contador = 0;
+            var persona;
+            while (persona != "salir") {
+                persona = prompt("Introduce nombre");
+                trabajadores[contador] = persona;
+                contador++;
+            }
+            trabajadores.pop();
+            /*trabajadores.forEach((elemento)=>{
+                document.write(elemento + "<br>");
+            });*/
+            for(let trabajador in trabajadores){
+                document.write(trabajadores[trabajador] + "<br>");
+            }
+            /*for (var i = 0; i <
+                trabajadores.length; i++) {
+                document.write(trabajadores[i] + "<br>");
+            }*/
+
+            //Declaración de la función
+            let num1 =5;
+            let num2 = 10;
+            
+            function suma(){
+                document.write("<p>La suma de "+ num1 +" y"+ num2 +" es " + (num1+num2)+ "</p>");
+            }
+
+            //Llamada a la función
+            suma();
+            suma();
+            suma();
+            suma();
+            suma();
+            suma();
+            suma();
+
+            function suma2(num1, num2){
+                document.write("<p>La suma de "+num1+"y "+num2+" es "+(num1+num2)+"</p>");
+            }
+            //Llamada a la función
+            suma2(3, 789);
+            suma2(7, 9);
+            suma2(10, 15);
+            suma2(1, 79);
+            suma2(3, 789);
+
+            function sumar(numero1, numero2, mostrarResultado) {
+                // 1. La máquina toma dos números y los suma
+                let resultado = numero1 + numero2;
+
+                // 2. La máquina le da el resultado a "alguien más" (el callback)
+                mostrarResultado(resultado);
+            }
+
+            function mostrarEnAlerta(resultado) {
+                alert("¡El resultado es: " + resultado + "!");
+            }
+
+            sumar(10, 2, mostrarEnAlerta);
+
+    var libro = {
+        titulo: 'Las Legiones Malditas',
+        autor: 'Santiago Posterguillo' ,
+        informacion:function (){ return this.titulo + " escrito por " + this.autor; }
+      }      
+
+    console.log(typeof libro.informacion);
+
+    function calculo(x) {return (x); }
+    console.log (calculo(undefined));
+    </script>
+
+
+</body>
+</html>

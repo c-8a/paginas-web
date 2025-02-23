@@ -37,10 +37,51 @@
         alert(Resultado);
         alert(parseInt(num2)+23);
         
+        let nombre3 = 'Mi nombre es "Angel" ';
+        let nombre4 = "Mi nombre es 'Angel' ";
+        alert(nombre4);
+        //Los strings no se suman, se concatenan:
+        let nombre5 = "Angel";
+        let espacio = " ";
+        let apellido = "García";
+        let nombreCompleto = nombre+espacio+apellido;
+        console.log(nombreCompleto);
+        //Otra forma de hacerlo
+        alert(nombre5 + " " +apellido);
+        alert(nombreCompleto.toUpperCase());
+
+        var texto=" Hola, Esto es el texto en el cual habra 2 palabras texto ";
+        var busqueda= texto.indexOf("texto");
+        document.write(busqueda);
+
+        var busqueda= texto.search("sexo");
+        
+        document.write(busqueda);
+        var busqueda= texto.match(/texto/gi);
+        document.write(busqueda);
+
+        var busqueda= texto.substr(11,5); 
+        document.write(busqueda);
+
+        document.write(texto);
+        var busqueda= texto.replace("Hola","Adiós");
+        document.write(busqueda);
+
+        var busqueda= texto.trim();
+        document.write(busqueda);
+
+        var busqueda= texto.split(" ");
+        document.write(busqueda);
+
+        var texto= `<h3>Tu nombre es ${nombre}</h3>`;
+        document.write(texto);
+
+
 
     </script>
 
 <h1>Tu nombre es</h1> Memita Rica
+
 
 </body>
 </html>
